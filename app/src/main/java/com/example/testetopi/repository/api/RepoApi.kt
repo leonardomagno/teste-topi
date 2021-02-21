@@ -7,7 +7,7 @@ import retrofit2.http.Query
 interface RepoApi {
 
     @GET("repositories")
-    fun getRepolList(
+    fun getRepoList(
         @Query("q") q: String, // language:Java
         @Query("sort") sort: String, // stars
         @Query("page") page: String // 1
