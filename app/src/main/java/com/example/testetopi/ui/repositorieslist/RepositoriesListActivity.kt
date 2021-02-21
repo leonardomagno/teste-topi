@@ -1,4 +1,4 @@
-package com.example.testetopi.ui
+package com.example.testetopi.ui.repositorieslist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
