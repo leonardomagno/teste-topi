@@ -1,7 +1,8 @@
-package com.example.testetopi
+package com.example.testetopi.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.testetopi.R
 
 class RepositoriesListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

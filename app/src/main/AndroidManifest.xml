@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TesteTopi">
-        <activity android:name=".SplashActivity"
+        <activity android:name=".ui.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             >
@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RepositoriesListActivity"></activity>
+        <activity android:name=".ui.RepositoriesListActivity"></activity>
     </application>
 
 </manifest>
