@@ -1,4 +1,4 @@
-package com.example.testetopi.models
+package com.example.testetopi.models.enums
 
 enum class ViewStatus {
     SUCCESS,
