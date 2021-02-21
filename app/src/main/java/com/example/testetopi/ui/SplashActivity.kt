@@ -1,9 +1,11 @@
-package com.example.testetopi
+package com.example.testetopi.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.testetopi.R
+import com.example.testetopi.ui.repositorieslist.RepositoriesListActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
