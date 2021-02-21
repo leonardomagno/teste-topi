@@ -1,4 +1,4 @@
-package com.example.testetopi.repository
+package com.example.testetopi.repository.api
 
 import com.example.testetopi.models.DataResponse
 import retrofit2.http.GET
