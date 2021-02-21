@@ -7,4 +7,43 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- custom color pallet -->
+
+    <color name="black_alpha_50">#80000000</color>
+    <color name="white_50">#8FFFFFFF</color>
+    <color name="white_custom">#C1EFE9E9</color>
+    <color name="blue">#3F51B5</color>
+    <color name="dark_blue">#26337C</color>
+    <color name="dark_blue_2">#1D2763</color>
+    <color name="dark_lilac">#461C8F</color>
+    <color name="green">#3C8A3F</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="orange">#FF3D00</color>
+    <color name="blue_button">#3D679A</color>
+    <color name="tundora">#434343</color>
+    <color name="gray">#828282</color>
+    <color name="light_gray">#A5A1A1</color>
+    <color name="dark_gray">#373535</color>
+    <color name="light_blue">#6ABBC5</color>
+    <color name="red">#ef2f03</color>
+    <color name="dark_red">#781C07</color>
+    <color name="pink">#E32766</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="grey_forty_transparency">#66434343</color>
+    <color name="grey_seventy_transparency">#B3434343</color>
+    <color name="black_three">#333333</color>
+    <color name="black_zero_transparency">#001f1f1f</color>
+    <color name="black_twenty_transparency">#33000000</color>
+    <color name="black_twenty_five_transparency">#40000000</color>
+    <color name="black_forty_transparency">#66000000</color>
+    <color name="black_thirty_transparency">#4c000000</color>
+    <color name="black_fifty_transparency">#80000000</color>
+    <color name="black_sixty_transparency">#99000000</color>
+    <color name="black_seventy_five_transparency">#BF000000</color>
+    <color name="black_eighty_transparency">#cc000000</color>
+    <color name="black_eighteen_five_transparency">#D9000000</color>
+    <color name="black_ninety_transparency">#e6000000</color>
+    <color name="black_solid">#000000</color>
+    <color name="transparent">#00000000</color>
 </resources>
