@@ -29,7 +29,7 @@ object Repository {
         onSucess: (RepositoriesList: List<RepositoryVO>) -> Unit,
         onError: () -> Unit
     ){
-        repoAPI.getRepolList(q, sort, page)
+        repoAPI.getRepoList(q, sort, page)
             .enqueue(object : Callback<DataResponse> {
                 override fun onResponse(
                     call: Call<DataResponse>,
