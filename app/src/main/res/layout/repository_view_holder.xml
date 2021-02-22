@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_gray">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_holder_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/spacings_eight"
+        app:cardCornerRadius="@dimen/spacings_eight"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/view_holder_repository_image_view_owner_avatar"
+                android:layout_width="@dimen/spacings_one_hundred"
+                android:layout_height="@dimen/spacings_one_hundred"
+                android:layout_marginTop="@dimen/spacings_sixteen"
+                android:layout_marginEnd="@dimen/spacings_sixteen"
+                android:layout_marginRight="@dimen/spacings_sixteen"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@id/view_holder_repository_text_view_owner_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/view_holder_repository_text_view_repository_name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:strokeColor="@color/yellow"
+                app:strokeWidth="@dimen/spacings_four"
+                tools:src="@drawable/ic_avatar_test" />
+
+            <TextView
+                android:id="@+id/view_holder_repository_text_view_owner_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacings_eight"
+                android:layout_marginBottom="@dimen/spacings_sixteen"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/text_size_fourteen"
+                app:layout_constraintBottom_toTopOf="@id/view_holder_divide_line_view"
+                app:layout_constraintEnd_toEndOf="@id/view_holder_repository_image_view_owner_avatar"
+                app:layout_constraintStart_toStartOf="@id/view_holder_repository_image_view_owner_avatar"
+                app:layout_constraintTop_toBottomOf="@id/view_holder_repository_image_view_owner_avatar"
+                tools:text="Leonardo Magno" />
+
+            <TextView
+                android:id="@+id/view_holder_repository_text_view_repository_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacings_sixteen"
+                android:layout_marginTop="@dimen/spacings_sixteen"
+                android:layout_marginEnd="@dimen/spacings_sixteen"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/text_size_twenty"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/view_holder_repository_text_view_repository_description"
+                app:layout_constraintEnd_toStartOf="@id/view_holder_repository_image_view_owner_avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="Project Testing" />
+
+            <TextView
+                android:id="@+id/view_holder_repository_text_view_repository_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_size_sixteen"
+                android:layout_marginTop="@dimen/spacings_twelve"
+                android:layout_marginEnd="@dimen/text_size_sixteen"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/text_size_sixteen"
+                app:layout_constraintBottom_toTopOf="@id/view_holder_repository_text_view_forks_number"
+                app:layout_constraintEnd_toStartOf="@id/view_holder_repository_image_view_owner_avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_holder_repository_text_view_repository_name"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="dssssssssssssssssssdjhfkjashfkjashsjfkhasjkdhasjfhkjsahfkjasgfksagfkhagfakfgakgfagfkhasgfhagsfhgakhfgashfhasgfjhasgfjhasgfjhasgfjhagsjfgasjhfgjagfgghga jka gkagf kag ag agk gfisga" />
+
+            <TextView
+                android:id="@+id/view_holder_repository_text_view_forks_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacings_sixteen"
+                android:layout_marginTop="@dimen/spacings_sixteen"
+                android:layout_marginEnd="@dimen/spacings_sixteen"
+                android:layout_marginBottom="@dimen/spacings_sixteen"
+                android:drawableLeft="@drawable/ic_fork"
+                android:drawablePadding="@dimen/spacings_six"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/text_size_eighteen"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/view_holder_divide_line_view"
+                app:layout_constraintEnd_toStartOf="@id/view_holder_repository_text_view_stars_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_holder_repository_text_view_repository_description"
+                tools:text="3466" />
+
+            <TextView
+                android:id="@+id/view_holder_repository_text_view_stars_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacings_sixteen"
+                android:layout_marginTop="@dimen/spacings_sixteen"
+                android:layout_marginEnd="@dimen/spacings_sixteen"
+                android:drawableLeft="@drawable/ic_star"
+                android:drawablePadding="@dimen/spacings_six"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/text_size_eighteen"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/view_holder_repository_text_view_forks_number"
+                app:layout_constraintEnd_toStartOf="@id/view_holder_repository_image_view_owner_avatar"
+                app:layout_constraintStart_toEndOf="@id/view_holder_repository_text_view_forks_number"
+                app:layout_constraintTop_toBottomOf="@id/view_holder_repository_text_view_repository_description"
+                tools:text="7466" />
+
+            <View
+                android:id="@+id/view_holder_divide_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacings_two"
+                android:layout_marginStart="@dimen/spacings_sixteen"
+                android:layout_marginTop="@dimen/spacings_eight"
+                android:layout_marginEnd="@dimen/spacings_sixteen"
+                android:layout_marginBottom="@dimen/spacings_eight"
+                android:background="@color/yellow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_holder_repository_text_view_forks_number" />
+
+            <View
+                android:id="@+id/view_holder_repositories_list_click_overlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/ripple_view_holder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

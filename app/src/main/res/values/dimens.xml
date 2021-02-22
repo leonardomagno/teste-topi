@@ -1,0 +1,135 @@
+<resources>
+
+    <dimen name="view_holder_standard_margin">@dimen/spacings_twenty_four</dimen>
+
+
+    <!-- Dimens customized for project -->
+    <!-- Text Sizes -->
+    <dimen name="text_size_two">2sp</dimen>
+    <dimen name="text_size_four">4sp</dimen>
+    <dimen name="text_size_eight">8sp</dimen>
+    <dimen name="text_size_ten">10sp</dimen>
+    <dimen name="text_size_twelve">12sp</dimen>
+    <dimen name="text_size_fourteen">14sp</dimen>
+    <dimen name="text_size_sixteen">16sp</dimen>
+    <dimen name="text_size_eighteen">18sp</dimen>
+    <dimen name="text_size_twenty">20sp</dimen>
+    <dimen name="text_size_twenty_two">22sp</dimen>
+    <dimen name="text_size_twenty_four">24sp</dimen>
+    <dimen name="text_size_twenty_six">26sp</dimen>
+    <dimen name="text_size_twenty_eight">28sp</dimen>
+    <dimen name="text_size_thirty">30sp</dimen>
+    <dimen name="text_size_thirty_two">32sp</dimen>
+    <dimen name="text_size_thirty_six">36sp</dimen>
+    <dimen name="text_size_forty">40sp</dimen>
+    <dimen name="text_size_forty_four">44sp</dimen>
+    <dimen name="text_size_fifty">50sp</dimen>
+    <dimen name="text_size_fifty_four">54sp</dimen>
+    <dimen name="text_size_sixty">60sp</dimen>
+    <dimen name="text_size_seventy_two">72sp</dimen>
+    <dimen name="text_size_one_hundred">100sp</dimen>
+    <dimen name="text_size_one_hundred_sixty">160sp</dimen>
+
+    <dimen name="spacings_top_row_challenge_completed_items">@dimen/spacings_sixteen</dimen>
+
+
+    <!-- Spacings -->
+    <dimen name="spacings_one">1dp</dimen>
+    <dimen name="spacings_two">2dp</dimen>
+    <dimen name="spacings_three">3dp</dimen>
+    <dimen name="spacings_four">4dp</dimen>
+    <dimen name="spacings_six">6dp</dimen>
+    <dimen name="spacings_seven">7dp</dimen>
+    <dimen name="spacings_eight">8dp</dimen>
+    <dimen name="spacings_ten">10dp</dimen>
+    <dimen name="spacings_twelve">12dp</dimen>
+    <dimen name="spacings_fourteen">14dp</dimen>
+    <dimen name="spacings_sixteen">16dp</dimen>
+    <dimen name="spacings_eighteen">18dp</dimen>
+    <dimen name="spacings_twenty">20dp</dimen>
+    <dimen name="spacings_twenty_two">22dp</dimen>
+    <dimen name="spacings_twenty_four">24dp</dimen>
+    <dimen name="spacings_twenty_six">26dp</dimen>
+    <dimen name="spacings_twenty_eight">28dp</dimen>
+    <dimen name="spacings_thirty">30dp</dimen>
+    <dimen name="spacings_thirty_two">32dp</dimen>
+    <dimen name="spacings_thirty_four">34dp</dimen>
+    <dimen name="spacings_thirty_six">36dp</dimen>
+    <dimen name="spacings_thirty_eight">38dp</dimen>
+    <dimen name="spacings_forty">40dp</dimen>
+    <dimen name="spacings_forty_two">42dp</dimen>
+    <dimen name="spacings_forty_four">44dp</dimen>
+    <dimen name="spacings_forty_six">46dp</dimen>
+    <dimen name="spacings_forty_eight">48dp</dimen>
+    <dimen name="spacings_fifty">50dp</dimen>
+    <dimen name="spacings_fifty_two">52dp</dimen>
+    <dimen name="spacings_fifty_four">54dp</dimen>
+    <dimen name="spacings_fifty_six">56dp</dimen>
+    <dimen name="spacings_fifty_eight">58dp</dimen>
+    <dimen name="spacings_sixty">60dp</dimen>
+    <dimen name="spacings_sixty_two">62dp</dimen>
+    <dimen name="spacings_sixty_four">64dp</dimen>
+    <dimen name="spacings_sixty_six">66dp</dimen>
+    <dimen name="spacings_sixty_eight">68dp</dimen>
+    <dimen name="spacings_seventy">70dp</dimen>
+    <dimen name="spacings_seventy_two">72dp</dimen>
+    <dimen name="spacings_seventy_four">74dp</dimen>
+    <dimen name="spacings_seventy_eight">78dp</dimen>
+    <dimen name="spacings_eighty">80dp</dimen>
+    <dimen name="spacings_eighty_two">82dp</dimen>
+    <dimen name="spacings_eighty_four">84dp</dimen>
+    <dimen name="spacings_eighty_six">86dp</dimen>
+    <dimen name="spacings_eighty_eight">88dp</dimen>
+    <dimen name="spacings_ninety">90dp</dimen>
+    <dimen name="spacings_ninety_two">92dp</dimen>
+    <dimen name="spacings_ninety_four">94dp</dimen>
+    <dimen name="spacings_ninety_six">96dp</dimen>
+    <dimen name="spacings_ninety_eight">98dp</dimen>
+    <dimen name="spacings_one_hundred">100dp</dimen>
+    <dimen name="spacings_one_hundred_two">102dp</dimen>
+    <dimen name="spacings_one_hundred_four">104dp</dimen>
+    <dimen name="spacings_one_hundred_six">106dp</dimen>
+    <dimen name="spacings_one_hundred_eight">108dp</dimen>
+    <dimen name="spacings_one_hundred_ten">110dp</dimen>
+    <dimen name="spacings_one_hundred_twelve">112dp</dimen>
+    <dimen name="spacings_one_hundred_fourteen">114dp</dimen>
+    <dimen name="spacings_one_hundred_sixteen">116dp</dimen>
+    <dimen name="spacings_one_hundred_twenty">120dp</dimen>
+    <dimen name="spacings_one_hundred_twenty_four">124dp</dimen>
+    <dimen name="spacings_one_hundred_twenty_eight">128dp</dimen>
+    <dimen name="spacings_one_hundred_thirty_two">132dp</dimen>
+    <dimen name="spacings_one_hundred_thirty_six">136dp</dimen>
+    <dimen name="spacings_one_hundred_forty">140dp</dimen>
+    <dimen name="spacings_one_hundred_forty_four">144dp</dimen>
+    <dimen name="spacings_one_hundred_forty_five">145dp</dimen>
+    <dimen name="spacings_one_hundred_forty_eight">148dp</dimen>
+    <dimen name="spacings_one_hundred_fifty">150dp</dimen>
+    <dimen name="spacings_one_hundred_sixty">160dp</dimen>
+    <dimen name="spacings_one_hundred_seventy">170dp</dimen>
+    <dimen name="spacings_one_hundred_seventy_eight">178dp</dimen>
+    <dimen name="spacings_one_hundred_eighty">180dp</dimen>
+    <dimen name="spacings_one_hundred_eighty_eight">188dp</dimen>
+    <dimen name="spacings_one_hundred_ninety">190dp</dimen>
+    <dimen name="spacings_one_hundred_sixty_six">166dp</dimen>
+    <dimen name="spacings_two_hundred">200dp</dimen>
+    <dimen name="spacings_two_hundred_twelve">212dp</dimen>
+    <dimen name="spacings_two_hundred_twenty">220dp</dimen>
+    <dimen name="spacings_two_hundred_forty_two">242dp</dimen>
+    <dimen name="spacings_two_hundred_fifty">250dp</dimen>
+    <dimen name="spacings_two_hundred_sixty">260dp</dimen>
+    <dimen name="spacings_two_hundred_eighty">280dp</dimen>
+    <dimen name="spacings_two_hundred_eighty_six">286dp</dimen>
+    <dimen name="spacings_three_hundred">300dp</dimen>
+    <dimen name="spacings_three_hundred_twenty">320dp</dimen>
+    <dimen name="spacings_three_hundred_fifty">350dp</dimen>
+    <dimen name="spacings_three_hundred_seventy">370dp</dimen>
+    <dimen name="spacings_four_hundred">400dp</dimen>
+
+    <!-- Screen Default Dimens -->
+
+    <dimen name="text_size_body_default_small">@dimen/text_size_twelve</dimen>
+    <dimen name="text_size_body_default_medium">@dimen/text_size_fourteen</dimen>
+    <dimen name="text_size_body_default_large">@dimen/text_size_sixteen</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>
