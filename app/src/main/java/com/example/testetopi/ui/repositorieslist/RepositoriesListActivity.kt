@@ -13,12 +13,13 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testetopi.R
+import com.example.testetopi.base.BaseListAdapterInterface
 import com.example.testetopi.gone
 import com.example.testetopi.models.RepositoryVO
 import com.example.testetopi.models.enums.ViewStatus
 import com.example.testetopi.visible
 
-class RepositoriesListActivity : AppCompatActivity() {
+class RepositoriesListActivity : AppCompatActivity(), BaseListAdapterInterface.OnItemClickListener {
 
     private val repositoryListAdapter = RepositoryListAdapter()
 
@@ -55,6 +56,8 @@ class RepositoriesListActivity : AppCompatActivity() {
 
     private fun setupView() {
         viewLoading = findViewById(R.id.activity_repositories_list_loading)
+
+        repositoryListAdapter.itemClickListener = this
     }
 
     private fun setupRecyclerView() {
@@ -125,5 +128,9 @@ class RepositoriesListActivity : AppCompatActivity() {
             }
         })
 
+    }
+
+    override fun onItemClick(position: Int, view: View) {
+        Toast.makeText(this, "Item Clicado", Toast.LENGTH_LONG).show()
     }
 }
