@@ -1,13 +1,14 @@
 package com.example.testetopi.di
 
 import com.example.testetopi.repository.Repository
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
-import javax.inject.Singleton
 
+/**
+ * Esse módulo contem as dependências básicas do app e que sempre serão utilizadas
+ */
 @Module
-class DataModule {
+class AppModule {
 
     @Provides
     fun provideLocalDataSource(): Repository = Repository()
