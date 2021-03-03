@@ -9,9 +9,9 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object Repository {
+class Repository() {
 
-    private const val API_URL = "https://api.github.com/search/"
+    private val API_URL = "https://api.github.com/search/"
     val repoAPI: RepoApi
 
     init {

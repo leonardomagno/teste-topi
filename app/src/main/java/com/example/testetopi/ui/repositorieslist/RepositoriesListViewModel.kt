@@ -11,7 +11,7 @@ class RepositoriesListViewModel : ViewModel() {
 
     val liveDataRepository = MutableLiveData<ViewData<List<RepositoryVO>>>()
 
-    val repository = Repository
+    val repository = Repository()
 
     fun repositoriesList(q: String, sort: String, page: String) {
 

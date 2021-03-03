@@ -1,23 +1,23 @@
 package com.example.testetopi.di
 
-import android.content.Context
-import com.example.testetopi.ui.di.MainComponent
+import android.app.Application
 import dagger.BindsInstance
 import dagger.Component
-import dagger.Module
+import dagger.android.AndroidInjector
+import dagger.android.support.AndroidSupportInjectionModule
+import dagger.android.support.DaggerApplication
 import javax.inject.Singleton
 
+
 @Singleton
-@Component(modules = [DataModule::class, ViewModelBuilderModule::class, SubcomponentsModule::class])
-interface ApplicationComponent {
+@Component(modules = [AndroidSupportInjectionModule::class, DataModule::class, ActivityModule::class])
+interface ApplicationComponent : AndroidInjector<DaggerApplication> {
 
-    @Component.Factory
-    interface Factory {
-        fun create(@BindsInstance applicationContext: Context): ApplicationComponent
+    @Component.Builder
+    interface Builder {
+        @BindsInstance
+        fun application(application: Application): Builder
+
+        fun build(): ApplicationComponent
     }
-
-    fun mainComponent(): MainComponent.Factory
 }
-
-@Module(subcomponents = [MainComponent::class])
-object SubcomponentsModule

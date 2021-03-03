@@ -18,10 +18,11 @@ import com.example.testetopi.gone
 import com.example.testetopi.models.RepositoryVO
 import com.example.testetopi.models.enums.ViewStatus
 import com.example.testetopi.visible
+import dagger.android.support.DaggerAppCompatActivity
 
-class RepositoriesListActivity : AppCompatActivity(), BaseListAdapterInterface.OnItemClickListener {
+class RepositoriesListActivity : DaggerAppCompatActivity(), BaseListAdapterInterface.OnItemClickListener {
 
-    private val repositoryListAdapter = RepositoryListAdapter()
+    private var repositoryListAdapter : RepositoryListAdapter? = null
 
     private lateinit var repositoriesListViewModel: RepositoriesListViewModel
     private lateinit var viewLoading: View
@@ -40,8 +41,8 @@ class RepositoriesListActivity : AppCompatActivity(), BaseListAdapterInterface.O
         super.onCreate(savedInstanceState)
         setContentView(R.layout.repositories_list_activity)
 
-        repositoriesListViewModel =
-            ViewModelProvider(this).get(RepositoriesListViewModel::class.java)
+        repositoryListAdapter = RepositoryListAdapter()
+        repositoriesListViewModel = ViewModelProvider(this).get(RepositoriesListViewModel::class.java)
 
         changeStatusBarColor()
         setupRecyclerView()
@@ -57,7 +58,7 @@ class RepositoriesListActivity : AppCompatActivity(), BaseListAdapterInterface.O
     private fun setupView() {
         viewLoading = findViewById(R.id.activity_repositories_list_loading)
 
-        repositoryListAdapter.itemClickListener = this
+        repositoryListAdapter?.itemClickListener = this
     }
 
     private fun setupRecyclerView() {
