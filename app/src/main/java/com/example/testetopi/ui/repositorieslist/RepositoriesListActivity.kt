@@ -1,6 +1,5 @@
 package com.example.testetopi.ui.repositorieslist
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -79,10 +78,10 @@ class RepositoriesListActivity : DaggerAppCompatActivity(), BaseListAdapterInter
                     viewLoading.gone()
                     dataList.addAll(viewData.data ?: emptyList())
                     if (!dataList.isNullOrEmpty()) {
-                        repositoryListAdapter.submitList(dataList)
-                        repositoryListAdapter.notifyDataSetChanged()
+                        repositoryListAdapter?.submitList(dataList)
+                        repositoryListAdapter?.notifyDataSetChanged()
                     }
-                    Log.d("Teste", "${repositoryListAdapter.currentList}")
+                    Log.d("Teste", "${repositoryListAdapter?.currentList}")
                 }
                 ViewStatus.LOADING -> {
                     viewLoading.visible()
@@ -116,7 +115,7 @@ class RepositoriesListActivity : DaggerAppCompatActivity(), BaseListAdapterInter
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 if (!isRecyclerLoading
-                    && linearLayoutManager.findLastCompletelyVisibleItemPosition() == repositoryListAdapter.currentList.size - 2
+                    && linearLayoutManager.findLastCompletelyVisibleItemPosition() == repositoryListAdapter?.currentList?.size!! - 2
                 ) {
                     isRecyclerLoading = true
                     currentPage++
