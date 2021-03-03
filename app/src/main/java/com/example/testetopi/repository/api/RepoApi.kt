@@ -1,15 +1,16 @@
 package com.example.testetopi.repository.api
 
-import com.example.testetopi.models.DataResponse
+import com.example.testetopi.models.RepositoryVO
+import io.reactivex.Flowable
 import retrofit2.http.GET
-import retrofit2.http.Query
+import retrofit2.http.Path
 
 interface RepoApi {
 
-    @GET("repositories")
-    fun getRepoList(
-        @Query("q") q: String, // language:Java
-        @Query("sort") sort: String, // stars
-        @Query("page") page: String // 1
-    ): retrofit2.Call<DataResponse>
+    @GET("users/{q}/{sort}/{page}")
+    fun getUser(
+        @Path("q") q: String,
+        @Path("sort") sort: String,
+        @Path("page") page: String
+    ): Flowable<RepositoryVO?>?
 }
