@@ -1,20 +1,22 @@
 package com.example.testetopi.ui.repositorieslist
 
+import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.testetopi.models.RepositoryVO
 import com.example.testetopi.models.ViewData
 import com.example.testetopi.models.enums.ViewStatus
 import com.example.testetopi.repository.Repository
+import com.example.testetopi.repository.api.RepoApi
+import javax.inject.Inject
 
-class RepositoriesListViewModel : ViewModel() {
+class RepositoriesListViewModel @Inject constructor(private val context : Context): ViewModel() {
 
     val liveDataRepository = MutableLiveData<ViewData<List<RepositoryVO>>>()
 
     val repository = Repository()
 
     fun repositoriesList(q: String, sort: String, page: String) {
-
         liveDataRepository.value = ViewData(viewStatus = ViewStatus.LOADING)
         repository.getRepositorieslList(q, sort, page,
             onSucess = {

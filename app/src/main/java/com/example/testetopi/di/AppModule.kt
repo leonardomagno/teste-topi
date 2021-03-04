@@ -1,5 +1,7 @@
 package com.example.testetopi.di
 
+import android.app.Application
+import android.content.Context
 import com.example.testetopi.base.Constants
 import com.example.testetopi.repository.Repository
 import dagger.Module
@@ -16,16 +18,22 @@ import javax.inject.Singleton
 @Module
 class AppModule {
 
+    @Provides
+    @Singleton
+    fun provideContext(app : Application) : Context {
+        return app.applicationContext
+    }
+
     @Singleton
     @Provides
     fun provideRetrofitInstance(): Retrofit? {
         return Retrofit.Builder()
             .baseUrl(Constants.BASE_URL)
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
     @Provides
     fun provideLocalDataSource(): Repository = Repository()
+
 }

@@ -1,7 +1,7 @@
 package com.example.testetopi
 
 import com.example.testetopi.di.AppComponent
-import com.example.testetopi.di.DaggerApplicationComponent
+import com.example.testetopi.di.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 
@@ -14,8 +14,9 @@ class BaseApplication: DaggerApplication() {
 
     }
 
+
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> =
-        DaggerApplicationComponent
+        DaggerAppComponent
             .builder()
             .application(this)
             .build()

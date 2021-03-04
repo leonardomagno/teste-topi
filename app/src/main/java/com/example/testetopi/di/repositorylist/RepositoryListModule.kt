@@ -1,6 +1,6 @@
 package com.example.testetopi.di.repositorylist
 
-import com.example.testetopi.network.RepoListApi
+import com.example.testetopi.repository.api.RepoApi
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -10,7 +10,7 @@ class RepositoryListModule {
 
     @RepositoriesListScope
     @Provides
-    fun provideAuthApi(retrofit: Retrofit): RepoListApi? {
-        return retrofit.create(RepoListApi::class.java)
+    fun provideRepoApi(retrofit: Retrofit): RepoApi? {
+        return retrofit.create(RepoApi::class.java)
     }
 }

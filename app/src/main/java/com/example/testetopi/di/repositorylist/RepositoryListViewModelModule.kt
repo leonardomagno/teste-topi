@@ -12,5 +12,5 @@ abstract class RepositoryListViewModelModule {
     @Binds
     @IntoMap
     @ViewModelKey(RepositoriesListViewModel::class)
-    abstract fun bindRepositoryListViewModel(viewModel: RepositoriesListViewModel?): ViewModel?
+    abstract fun bindMainViewModel(mainActivityViewModel: RepositoriesListViewModel) : ViewModel
 }

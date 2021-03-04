@@ -1,6 +1,7 @@
 package com.example.testetopi.di
 
 import com.example.testetopi.di.repositorylist.RepositoryListModule
+import com.example.testetopi.di.repositorylist.RepositoryListViewModelModule
 import com.example.testetopi.ui.repositorieslist.RepositoriesListActivity
 import com.example.testetopi.ui.repositorieslist.RepositoriesListViewModel
 import dagger.Module
@@ -11,7 +12,6 @@ import dagger.android.ContributesAndroidInjector
 abstract class ActivityModule {
 
     @ContributesAndroidInjector (modules = [
-        RepositoriesListViewModel::class,
-        RepositoryListModule::class])
+        RepositoryListViewModelModule::class, RepositoryListModule::class])
     abstract fun provideRepositoryActivity(): RepositoriesListActivity
 }
