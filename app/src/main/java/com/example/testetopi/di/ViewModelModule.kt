@@ -2,7 +2,6 @@ package com.example.testetopi.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.testetopi.di.repositorylist.RepositoryListViewModelModule
 import com.example.testetopi.ui.repositorieslist.RepositoriesListViewModel
 import dagger.Binds
 import dagger.Module

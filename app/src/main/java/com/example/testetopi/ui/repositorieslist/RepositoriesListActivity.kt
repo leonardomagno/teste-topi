@@ -51,7 +51,6 @@ class RepositoriesListActivity : DaggerAppCompatActivity(),
         setContentView(R.layout.repositories_list_activity)
 
         repositoryListAdapter = RepositoryListAdapter()
-//        repositoriesListViewModel = ViewModelProvider(this, viewModelStore).get(RepositoriesListViewModel::class.java)
 
         changeStatusBarColor()
         setupRecyclerView()
