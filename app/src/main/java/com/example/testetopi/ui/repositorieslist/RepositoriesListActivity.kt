@@ -6,6 +6,7 @@ import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -21,12 +22,13 @@ import com.example.testetopi.visible
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
-class RepositoriesListActivity : DaggerAppCompatActivity(), BaseListAdapterInterface.OnItemClickListener {
+class RepositoriesListActivity : DaggerAppCompatActivity(),
+    BaseListAdapterInterface.OnItemClickListener {
 
     //View Model
-    private lateinit var repositoriesListViewModel: RepositoriesListViewModel
     @Inject
-    lateinit var viewModelFactory: ViewModelFactory
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+    val repositoriesListViewModel by viewModels <RepositoriesListViewModel>{ viewModelFactory }
 
     //views
     private lateinit var viewLoading: View
@@ -34,7 +36,7 @@ class RepositoriesListActivity : DaggerAppCompatActivity(), BaseListAdapterInter
     //RecyclerView
     private lateinit var recyclerView: RecyclerView
     private lateinit var linearLayoutManager: LinearLayoutManager
-    private var repositoryListAdapter : RepositoryListAdapter? = null
+    private var repositoryListAdapter: RepositoryListAdapter? = null
 
     //Parâmetros para chamada da lista de repositórios
     private val q = "language:Java"
@@ -49,7 +51,7 @@ class RepositoriesListActivity : DaggerAppCompatActivity(), BaseListAdapterInter
         setContentView(R.layout.repositories_list_activity)
 
         repositoryListAdapter = RepositoryListAdapter()
-        repositoriesListViewModel = ViewModelProvider(this, viewModelFactory).get(RepositoriesListViewModel::class.java)
+//        repositoriesListViewModel = ViewModelProvider(this, viewModelStore).get(RepositoriesListViewModel::class.java)
 
         changeStatusBarColor()
         setupRecyclerView()

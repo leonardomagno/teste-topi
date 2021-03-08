@@ -10,13 +10,12 @@ import com.example.testetopi.repository.Repository
 import com.example.testetopi.repository.api.RepoApi
 import javax.inject.Inject
 
-class RepositoriesListViewModel @Inject constructor(private val context : Context): ViewModel() {
+class RepositoriesListViewModel @Inject constructor(val repository: Repository): ViewModel() {
 
     val liveDataRepository = MutableLiveData<ViewData<List<RepositoryVO>>>()
 
-    val repository = Repository()
-
     fun repositoriesList(q: String, sort: String, page: String) {
+
         liveDataRepository.value = ViewData(viewStatus = ViewStatus.LOADING)
         repository.getRepositorieslList(q, sort, page,
             onSucess = {
